@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Vast+Shadow&display=swap');
+/* 
+font-family: 'Ephesis', cursive;
+font-family: 'Vast Shadow', serif; */
+
+/* *{
+  background-color: black;
+} */
+
+#root{
+  background-color: black;
+}
+
+#logo {
+
+  font-family: 'Vast Shadow', serif;
+  font-size: 55px; /* Increased font size */
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+
+}

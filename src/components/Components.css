@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Merriweather&family=PT+Serif&display=swap');
+
+* {
+  user-select: none;
+}
+
+#logo {
+  font-family: 'Vast Shadow', serif;
+  font-size: 55px; /* Increased font size */
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+
+#logo:hover {
+  font-family: 'Vast Shadow', serif;
+  font-size: 55px; /* Increased font size */
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 2px 2px  aqua;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.category-btn:hover {
+  background-color: aqua !important;
+  color: black !important;
+}
+
+.top-search:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.category-btn:hover span {
+  color: black !important;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
+  background-color: white;
+}
+
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  gap: 7px;
+  font-family: 'Exo 2', sans-serif;
+  padding: 7px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.top-search {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: small;
+  outline: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  gap: 3px;
+  border: 1 solid;
+  padding: 7px 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+@layer base {
+  body {
+    background-color: #14161b;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: orange !important;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+  #logo {
+    font-size: 50px;
+  }
+  .react-player {
+    height: 45vh !important;
+  }
+  .search-bar {
+    width: 120px;
+  }
+  .category-btn {
+    margin-top: 0px;
+    border-radius: 8px;
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+  .top-search {
+    margin-top: 0px;
+    border-radius: 8px;
+    padding: 3px 6px;
+    font-size: 12px;
+    gap: 2;
+  }
+}
+
+#logo {
+  font-family: 'Vast Shadow', serif;
+  font-size: 55px; /* Increased font size */
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding-left: 10px;
+  box-shadow: none;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  width: 250px;
+  background-color: white;
+}
