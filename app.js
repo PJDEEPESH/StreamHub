@@ -2,19 +2,13 @@ require('dotenv').config();
 const express = require("express")
 const cors = require("cors")
 const collection = require("./mongo");
-
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
-
-
 app.get('/',cors(),(req,res)=>{
-
 })
-
 app.post('/',async(req,res)=>{
-
     const{email,password} = req.body
 
     try {
@@ -36,7 +30,6 @@ app.post('/',async(req,res)=>{
         res.json("not exist")
     }
 })
-
 app.post('/signup',async(req,res)=>{
 
     const{email,password} = req.body
@@ -45,8 +38,7 @@ app.post('/signup',async(req,res)=>{
         email:email, 
         password:password,
     }
-
-    try {
+ try {
         const check = await collection.findOne({email:email})
 
         if(check){
@@ -60,7 +52,6 @@ app.post('/signup',async(req,res)=>{
         console.log(e);
     }
 })
-
 app.listen(8000,()=>{
     console.log("port connected")
 })
